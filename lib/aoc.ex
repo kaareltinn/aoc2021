@@ -1,13 +1,21 @@
 defmodule AOC do
-  alias AOC.Day1.InputParser
-
   def day1_part1 do
-    InputParser.parse('day1_input.txt')
+    AOC.Day1.InputParser.parse('day1_input.txt')
     |> AOC.Day1.Part1.call
   end
 
   def day1_part2 do
-    InputParser.parse('day1_input.txt')
+    AOC.Day1.InputParser.parse('day1_input.txt')
     |> AOC.Day1.Part2.call
+  end
+
+  def day2_part1 do
+    AOC.Day2.InputParser.parse('day2_input.txt')
+    |> AOC.Day2.Dive.call(:part1)
+  end
+
+  def day2_part2 do
+    AOC.Day2.InputParser.parse('day2_input.txt')
+    |> AOC.Day2.Dive.call(:part2)
   end
 end
