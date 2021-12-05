@@ -28,4 +28,14 @@ defmodule AOC do
     AOC.Day3.InputParser.parse('day3_input.txt')
     |> AOC.Day3.BinaryDiagnostic.part2
   end
+
+  def day4_part1 do
+    {boards, numbers} = AOC.Day4.InputParser.parse('day4_input.txt')
+    AOC.Day4.GiantSquid.part1(boards, numbers)
+  end
+
+  def day4_part2 do
+    {boards, numbers} = AOC.Day4.InputParser.parse('day4_input.txt')
+    AOC.Day4.GiantSquid.part2(boards, numbers)
+  end
 end
