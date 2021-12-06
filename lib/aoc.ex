@@ -1,4 +1,6 @@
 defmodule AOC do
+  require IEx
+
   def day1_part1 do
     AOC.Day1.InputParser.parse('day1_input.txt')
     |> AOC.Day1.Part1.call
@@ -37,5 +39,15 @@ defmodule AOC do
   def day4_part2 do
     {boards, numbers} = AOC.Day4.InputParser.parse('day4_input.txt')
     AOC.Day4.GiantSquid.part2(boards, numbers)
+  end
+
+  def day5_part1 do
+    input = AOC.Day5.InputParser.parse('day5_input.txt')
+    AOC.Day5.HydrotermalVenture.part1(input)
+  end
+
+  def day5_part2 do
+    input = AOC.Day5.InputParser.parse('day5_input.txt')
+    AOC.Day5.HydrotermalVenture.part2(input)
   end
 end

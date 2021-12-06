@@ -28,7 +28,6 @@ defmodule AOC.Day4.GiantSquid do
     else
       part2_helper(new_boards, { boards_won, number }, numbers)
     end
-
   end
 
   def change_boards(boards, number) do
