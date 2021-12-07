@@ -50,4 +50,14 @@ defmodule AOC do
     input = AOC.Day5.InputParser.parse('day5_input.txt')
     AOC.Day5.HydrotermalVenture.part2(input)
   end
+
+  def day6_part1 do
+    input = AOC.Day6.InputParser.parse('day6_input.txt')
+    AOC.Day6.Lanternfish.part1(input, 80)
+  end
+
+  def day6_part2 do
+    input = AOC.Day6.InputParser.parse('day6_input.txt')
+    AOC.Day6.Lanternfish.part1(input, 256)
+  end
 end
