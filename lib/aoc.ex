@@ -60,4 +60,14 @@ defmodule AOC do
     input = AOC.Day6.InputParser.parse('day6_input.txt')
     AOC.Day6.Lanternfish.part1(input, 256)
   end
+
+  def day7_part1 do
+    input = AOC.Day7.InputParser.parse('day7_input.txt')
+    AOC.Day7.Grabs.part1(input)
+  end
+
+  def day7_part2 do
+    input = AOC.Day7.InputParser.parse('day7_input.txt')
+    AOC.Day7.Grabs.part2(input)
+  end
 end
