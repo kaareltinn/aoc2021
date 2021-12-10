@@ -70,4 +70,9 @@ defmodule AOC do
     input = AOC.Day7.InputParser.parse('day7_input.txt')
     AOC.Day7.Grabs.part2(input)
   end
+
+  def day9_part1 do
+    input = AOC.Day9.InputParser.parse('day9_input.txt')
+    AOC.Day9.SmokeBasin.part1(input)
+  end
 end
