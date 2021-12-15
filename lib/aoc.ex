@@ -75,4 +75,33 @@ defmodule AOC do
     input = AOC.Day9.InputParser.parse('day9_input.txt')
     AOC.Day9.SmokeBasin.part1(input)
   end
+
+  def day12_part1 do
+    input = [
+      "vn-DD",
+      "qm-DD",
+      "MV-xy",
+      "end-xy",
+      "KG-end",
+      "end-kw",
+      "qm-xy",
+      "start-vn",
+      "MV-vn",
+      "vn-ko",
+      "lj-KG",
+      "DD-xy",
+      "lj-kh",
+      "lj-MV",
+      "ko-MV",
+      "kw-qm",
+      "qm-MV",
+      "lj-kw",
+      "VH-lj",
+      "ko-qm",
+      "ko-start",
+      "MV-start",
+      "DD-ko",
+    ]
+    AOC.Day12.PassagePathing.part1(input)
+  end
 end
